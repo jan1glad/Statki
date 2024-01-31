@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sesja JG</title>
+    <link rel="stylesheet" href="css_JG/style_JG.css">
+    <script src="js_JG/skrypty_JG.js"></script>
+</head>
+<body onload="loadAll_JG(), zmianaSekcji_JG()">
+<h1 id="kolizja">Statki</h1>
+<h2></h2>
+<img id="lewy" src="img_JG/statek.jpg">
+<canvas id="myCanvas_JG" width="500" height="375"></canvas>
+<img id="prawy" src="img_JG/statek.jpg">
+<br><br>
+<section id="statekA">
+<h3>Ruch okrętu A Niebieski</h3>
+<table>
+    <tr>
+        <td>zmiana kierunku ruchu o kat</td> <td><input type="number" id="kierunekRuchuA_JG"></td>
+    </tr>
+    <tr>
+    <td>zmiana kierunku armaty o kat</td> <td><input type="number" id="kierunekArmatyA_JG"></td></tr>
+    <tr><td>predkosc ruchu</td> <td><select id="predkoscRuchuA_JG">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select></td>
+    </tr>
+    <tr>
+    <td>strzał z armaty</td> <td><input id="strzalA_JG" type="checkbox">Strzel</td>
+    </tr>
+</table>
+</section>
+<section id="statekB">
+    <h3>Ruch okrętu B Zielony</h3>
+    <table>
+        <tr>
+            <td>zmiana kierunku ruchu o kat</td> <td><input type="number" id="kierunekRuchuB_JG"></td>
+        </tr>
+        <tr>
+            <td>zmiana kierunku armaty o kat</td> <td><input type="number" id="kierunekArmatyB_JG"></td></tr>
+        <tr><td>predkosc ruchu</td> <td><select id="predkoscRuchuB_JG">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td>
+        </tr>
+        <tr>
+            <td>strzał z armaty</td> <td><input id="strzalB_JG" type="checkbox">Strzel</td>
+        </tr>
+    </table></section>
+<br><button id="ruchOkretu_JG" onclick="zmianaSekcji_JG(), aktualizujStatek_JG()">Ruch okretu</button>
+<br>
+<br>
+<button onclick="nowaGra_JG()">Nowa Gra</button>
+<br>
+<br>
+<br>
+<footer>Jan Gładykowski &copy;</footer>
+</body>
+</html>
