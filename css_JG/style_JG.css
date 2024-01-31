@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+}
+canvas{
+    background: antiquewhite;
+}
+img{
+    height: 200px;
+    width: 140px;
+}
+#prawy{
+    position: absolute;
+    margin-right: 340px;
+    margin-top: 180px;
+    right: 0;
+}
+#lewy{
+    position: absolute;
+    margin-left: 340px;
+    margin-top: 180px;
+    left: 0;
+}
+table, td, th {
+    margin-left: auto;
+    margin-right: auto;
+}
+#statekA {
+    color: blue;
+}
+#statekB {
+    display: none;
+    color: green;
+}
